@@ -1,0 +1,52 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-case-declarations": "off",
+    "no-constant-condition": "off",
+    "@typescript-eslint/ban-ts-comment": "off"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "commitlint": "^18.4.3",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.1.1"
+  },
+  "name": "big-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^8.56.0",
+    "eslint-scope": "^7.2.2",
+    "eslint-visitor-keys": "^3.4.3",
+    "prettier-linter-helpers": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
