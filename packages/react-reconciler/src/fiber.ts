@@ -46,3 +46,4 @@ export class FiberNode {
 		this.flags = NoFlags;
 	}
 }
+
