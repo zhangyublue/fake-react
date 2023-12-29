@@ -4,7 +4,7 @@ export type Ref = any;
 export type Key = any;
 export type ElementType = any;
 
-export  interface ReactElement {
+export  interface ReactElementType {
   $$typeof: Symbol | number;
   type: ElementType;
   key: Key ;
