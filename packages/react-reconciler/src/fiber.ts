@@ -80,7 +80,9 @@ export const createWorkInProgress = (current: FiberNode, pendingProps: Props): F
 		current.alternate = workInProgress;
 	} else {
 		// 这里是更新的时候
+		// 更新时已经有了alternate
 		workInProgress.pendingProps = pendingProps;
+		// 重置副作用标签，因为副作用可能是上次更新的残留
 		workInProgress.flags = NoFlags;
 		workInProgress.updateQueue = current.updateQueue;
 		workInProgress.child = current.child;
